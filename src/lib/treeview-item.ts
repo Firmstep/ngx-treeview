@@ -22,8 +22,10 @@ export class TreeviewItem {
     private internalChildren: TreeviewItem[];
     text: string;
     value: any;
+    decoupleChildFromParent: boolean;
 
-    constructor(item: TreeItem, autoCorrectChecked = false) {
+    constructor(item: TreeItem, autoCorrectChecked = false, decoupleChildFromParent = false) {
+        this.decoupleChildFromParent = decoupleChildFromParent;
         if (isNil(item)) {
             throw new Error('Item must be defined');
         }
@@ -48,7 +50,7 @@ export class TreeviewItem {
                     child.disabled = true;
                 }
 
-                return new TreeviewItem(child);
+                return new TreeviewItem(child, autoCorrectChecked, this.decoupleChildFromParent);
             });
         }
 
@@ -134,7 +136,9 @@ export class TreeviewItem {
                         }
                     }
                 });
-                this.internalChecked = checked;
+                if (!this.decoupleChildFromParent) {
+                    this.internalChecked = checked;
+                }
             }
         }
     }
