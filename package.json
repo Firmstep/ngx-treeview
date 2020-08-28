@@ -50,7 +50,6 @@
     "lodash": "4.17.10"
   },
   "devDependencies": {
-    "webpack": "4.24.0",
     "@angular-devkit/build-angular": "0.8.0",
     "@angular/cli": "6.2.1",
     "@angular/common": "6.1.7",
@@ -84,6 +83,7 @@
     "karma-jasmine": "1.1.2",
     "karma-jasmine-html-reporter": "0.2.2",
     "lodash": "4.17.10",
+    "lodash.mergewith": "^4.6.2",
     "node-sass": "4.9.3",
     "protractor": "5.4.0",
     "rimraf": "2.6.2",
@@ -91,6 +91,7 @@
     "ts-node": "7.0.0",
     "tslint": "5.11.0",
     "typescript": "2.9.2",
+    "webpack": "4.24.0",
     "zone.js": "0.8.26"
   }
 }
