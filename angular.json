@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-ngx-treeview": {
+    "ngx-treeview": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -16,7 +16,7 @@
             "allowedCommonJsDependencies": [
               "lodash"
             ],
-            "outputPath": "dist/angular-ngx-treeview",
+            "outputPath": "dist/ngx-treeview",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-ngx-treeview:build"
+            "browserTarget": "ngx-treeview:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-ngx-treeview:build:production"
+              "browserTarget": "ngx-treeview:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-ngx-treeview:build"
+            "browserTarget": "ngx-treeview:build"
           }
         },
         "test": {
@@ -113,11 +113,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-ngx-treeview:serve"
+            "devServerTarget": "ngx-treeview:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-ngx-treeview:serve:production"
+              "devServerTarget": "ngx-treeview:serve:production"
             }
           }
         }
@@ -164,5 +164,5 @@
       }
     }
   },
-  "defaultProject": "angular-ngx-treeview"
+  "defaultProject": "ngx-treeview"
 }
