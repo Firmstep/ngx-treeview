@@ -11,6 +11,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "preinstall": "./install.sh",
     "deploy": "ng build --prod --base-href /ngx-treeview/ && node gh-pages.js"
   },
   "private": true,
@@ -72,6 +73,7 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "6.1.3",
-    "typescript": "3.9.10"
+    "typescript": "3.9.10",
+    "webpack": "4.24.0",
   }
 }
