@@ -6,7 +6,8 @@
     "module": "es2015",
     "types": []
   },
-  "files": [
+  "include": [
+    "src/**/*.d.ts",
     "index.ts"
   ],
   "exclude": [
