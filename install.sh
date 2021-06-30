@@ -6,8 +6,8 @@ if pwd | grep node_modules ; then
   cd tmp-ngx-treeview
   npm install --ignore-scripts
   npm rebuild node-sass
-  npm run build
+  ng build
   cd ..
-  mv tmp-ngx-treeview/src node_modules/ngx-treeview
+  mv tmp-ngx-treeview/dist/src node_modules/ngx-treeview
   mv tmp-ngx-treeview node_modules/ngx-treeview/source
 fi
