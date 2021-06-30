@@ -20,8 +20,8 @@ export class DropdownTreeviewComponent {
     @Input() config: TreeviewConfig;
     @Output() selectedChange = new EventEmitter<any[]>(true);
     @Output() filterChange = new EventEmitter<string>();
-    @ViewChild(TreeviewComponent, { static: false }) treeviewComponent: TreeviewComponent;
-    @ViewChild(DropdownDirective, { static: false }) dropdownDirective: DropdownDirective;
+    @ViewChild(TreeviewComponent, { static: true }) treeviewComponent: TreeviewComponent;
+    @ViewChild(DropdownDirective, { static: true }) dropdownDirective: DropdownDirective;
 
     constructor(
         public i18n: TreeviewI18n,
