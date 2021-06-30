@@ -93,7 +93,7 @@
     "lodash.mergewith": "^4.6.2",
     "minimist": "^1.2.5",
     "mixin-deep": "^2.0.1",
-    "node-sass": "4.9.3",
+    "node-sass": "4.14.0",
     "protractor": "5.4.0",
     "rimraf": "2.6.2",
     "rxjs": "6.3.2",
