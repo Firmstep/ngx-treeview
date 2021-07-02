@@ -6,6 +6,10 @@
     "module": "es2015",
     "types": []
   },
+  "include": [
+    "src/**/*.d.ts",
+    "*.ts"
+  ],
   "exclude": [
     "test.ts",
     "**/*.spec.ts",
